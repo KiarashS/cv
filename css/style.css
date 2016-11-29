@@ -21,6 +21,10 @@ a{
 a:hover{
 	color:#5C6BC0; /*Change link color (on mouse over)*/
 }
+p{
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
 #blue_bg{
 	z-index:-1;
 	position:fixed;
