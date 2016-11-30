@@ -43,6 +43,13 @@ p{
 	box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.19), 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 	overflow:auto;
 }
+#name-desc{
+	margin-top: -15px; 
+	color: #616161; 
+	font-family: 'Roboto', sans-serif; 
+	font-size: 13px; 
+	font-weight: 100;
+}
 #quick_card{
 	padding:25px;
 	margin-top:10vh;
