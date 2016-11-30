@@ -25,6 +25,9 @@ p{
 	margin-bottom: 1em;
 	margin-top: 1em;
 }
+em { 
+    font-style: italic;
+}
 #blue_bg{
 	z-index:-1;
 	position:fixed;
