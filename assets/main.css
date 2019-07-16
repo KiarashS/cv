@@ -2529,7 +2529,35 @@ img[height] {
     border-radius: 3px;
 }
 
+    .custom-text-button:active,
+    .custom-text-button:focus {
+        color: rgb(198, 198, 198);
+    }
+
     .custom-text-button:hover {
         background: #fff;
         color: #F8BB10;
+    }
+
+.custom-text-alternative-button {
+    background: #fff;
+    border: solid 2px #ededed;
+    -webkit-transition: all .15s linear;
+    -o-transition: all .15s linear;
+    transition: all .15s linear;
+    padding: .5rem 1.7rem;
+    color: rgb(198, 198, 198);
+    font-weight: 800;
+    border-radius: 3px;
+}
+
+    .custom-text-alternative-button:active,
+    .custom-text-alternative-button:focus {
+        color: rgb(198, 198, 198);
+    }
+
+    .custom-text-alternative-button:hover {
+        background: #ededed;
+        color: #F8BB10;
+        border-color: #fff;
     }
