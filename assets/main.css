@@ -2559,5 +2559,5 @@ img[height] {
     .custom-text-alternative-button:hover {
         background: #ededed;
         color: #F8BB10;
-        border-color: #fff;
+        /* border-color: #fff; */
     }
