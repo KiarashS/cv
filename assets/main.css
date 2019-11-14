@@ -2602,3 +2602,9 @@ img[height] {
 .avatar-shine:active:after {
   opacity: 0;
 }
+
+#kia {
+              /* width: 18%; */
+              /* height: 18vh; */
+              overflow: visible;
+}
