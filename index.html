@@ -1,11 +1,15 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="js-enabled nivo-lightbox-notouch">
+
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49590121-3"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-49590121-3');
@@ -24,23 +28,28 @@
     <script src="./assets/lazy-line-painter-1.9.6.min.js"></script>
 
     <script type="text/javascript">
+        (function () {
 
-      (function(){ 
+            document.onreadystatechange = () => {
 
-        document.onreadystatechange = () => {
+                if (document.readyState === 'complete') {
+                    let el = document.querySelector('#kia');
+                    let myAnimation = new LazyLinePainter(el, {
+                        "ease": "easeLinear",
+                        "strokeWidth": 1.5,
+                        "strokeOpacity": 1,
+                        "strokeColor": "#8E43AD",
+                        "reverse": true,
+                        "delay": 500
+                    });
+                    myAnimation.on('complete', () => {
 
-          if (document.readyState === 'complete') {
-            let el = document.querySelector('#kia');
-            let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":1.5,"strokeOpacity":1,"strokeColor":"#8E43AD","reverse":true});
-            myAnimation.on('complete', () => {
-               
-            });
-            myAnimation.paint(); 
-          }
-        }
+                    });
+                    myAnimation.paint();
+                }
+            }
 
-      })();
-
+        })();
     </script>
 
     <!-- Google Font: Lato -->
@@ -101,16 +110,29 @@
                             <div class="c-header__inner-header">
                                 <div class="c-header__avatar">
                                     <div style="text-align: center;" title="A day without learning is a lost day.">
-                                        <svg version="1.1" id="kia" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="151.178px" height="107.388px" viewBox="0 0 151.178 107.388" enable-background="new 0 0 151.178 107.388" xml:space="preserve" data-llp-composed="true" class="lazy-line-painter">
+                                        <svg version="1.1" id="kia" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="151.178px"
+                                            height="107.388px" viewBox="0 0 151.178 107.388"
+                                            enable-background="new 0 0 151.178 107.388" xml:space="preserve"
+                                            data-llp-composed="true" class="lazy-line-painter">
                                             <g>
-                                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#000002" d="M48.32,14.773c-0.903,0.462-1.549,1.917-2.014,2.767l-2.755,5.407&#10;&#9;&#9;l-3.082,6.053l-1.448,2.724l8.413,4.324l4.234-3.25l0.005-0.004c2.887-2.04,5.723-4.154,8.589-6.223&#10;&#9;&#9;c3.06-2.209,6.155-4.375,9.35-6.386c7.118-4.479,15.211-8.497,23.71-9.213c2.291-0.193,4.59-0.142,6.866,0.182&#10;&#9;&#9;c0.496,0.071,0.991,0.142,1.486,0.212c1.108,0.155,1.021,1.429-0.159,1.345l-1.471-0.104c-0.813-0.058-1.596-0.09-2.41-0.013&#10;&#9;&#9;C79.974,14.274,68.728,25.675,55.466,35.99l-3.048,2.625c4.426,2.308,8.774,4.782,13.125,7.226c4.86,2.73,9.73,5.442,14.699,7.971&#10;&#9;&#9;c6.229,3.171,12.693,6.115,19.361,8.237c6.1,1.942,12.585,3.25,19.013,2.98c9.628-0.404,17.946-4.404,23.941-12.004&#10;&#9;&#9;c4.036-5.116,5.566-10.577,6.366-16.935c-3.432,3.765-6.97,7.446-10.822,10.786c-2.571,2.23-5.394,4.421-8.381,6.065&#10;&#9;&#9;c-2.362,1.3-5.279,2.487-8.028,2.262c-1.645-0.135-3.206-0.71-4.12-2.16c-1.65-2.618-0.431-6.905,0.782-9.663&#10;&#9;&#9;c-1.778,1.973-3.666,3.846-5.697,5.559c-2.224,1.877-7.625,6.06-10.541,3.711c-2.311-1.863-1.22-6.102-0.165-8.852l-1.288,0.965&#10;&#9;&#9;l-2.035,1.392l-0.004,0.003c-4.333,2.785-9.152,4.552-14.367,4.03l-0.01-0.001l-0.01-0.002c-1.712-0.285-3.445-0.964-4.368-2.526&#10;&#9;&#9;c-0.971-1.642-0.733-3.737-0.252-5.496c0.508-1.857,1.259-3.674,2.084-5.411c0.902-1.898,1.919-3.747,2.974-5.565&#10;&#9;&#9;c1.779-3.065,3.697-6.045,5.473-9.109l0.006-0.01l0.007-0.01c0.36-0.526,0.709-1.06,1.083-1.576&#10;&#9;&#9;c0.457-0.63,0.942-1.205,1.495-1.753l0.022-0.022l0.025-0.017c1.02-0.681,2.109-1.095,3.245-1.532&#10;&#9;&#9;c0.85-0.326,2.101-0.563,2.548,0.493c0.335,0.791-0.347,1.88-0.814,2.504l-1.904,3.174l-2.103,3.362&#10;&#9;&#9;c-2.364,4.727-4.953,9.374-6.632,14.405c-0.333,1.336-0.936,4.038,0.195,5.159c1.133,1.122,3.86,0.51,5.206,0.174&#10;&#9;&#9;c3.137-1.179,5.887-2.962,8.61-4.883l1.682-1.367l1.651-1.36c1.517-2.419,3.324-4.666,5.323-6.702&#10;&#9;&#9;c4.626-4.713,10.448-8.857,17.015-10.213c1.045-0.216,2.024-0.34,3.081-0.363l0.151-0.302l0.006-0.01&#10;&#9;&#9;c0.373-0.622,0.781-1.162,1.345-1.625c0.687-0.563,1.17-0.726,1.997-0.986c0.99-0.311,1.98-0.622,2.97-0.933l0.019-0.006&#10;&#9;&#9;l0.02-0.003c0.592-0.106,1.09,0.387,0.936,0.967l-0.013,0.049l-1.962,2.987c1.107,0.078,2.601,0.15,3.43,0.687&#10;&#9;&#9;c0.984,0.638,0.816,2.119-0.494,2.109l-0.03,0l-0.03-0.006c-1.229-0.246-2.455-0.42-3.704-0.517h-0.546l-2.762,4.735&#10;&#9;&#9;c-1.54,2.823-3.02,5.677-4.439,8.562c-1.586,3.225-3.131,6.441-4.082,9.922c-0.237,1.194-0.713,4.074,0.497,4.863&#10;&#9;&#9;c1.384,0.902,4.262-0.661,5.461-1.357c1.372-0.797,2.692-1.72,3.961-2.672c1.434-1.075,2.826-2.21,4.188-3.375&#10;&#9;&#9;c2.281-1.95,4.494-3.994,6.643-6.09c0.837-0.816,1.665-1.642,2.48-2.481c0.532-0.548,1.066-1.103,1.567-1.667l1.533-1.821&#10;&#9;&#9;c0.424-0.504,1.127-0.893,1.731-0.427c0.598,0.461,0.521,1.321-0.016,1.802l-0.145,0.174v0.921c0,7.568-1.949,14.924-6.147,21.261&#10;&#9;&#9;c-5.787,8.737-14.65,14.336-25.135,15.303c-12.396,1.143-25.675-3.85-36.677-9.147c-10.272-4.945-19.947-10.979-29.945-16.432&#10;&#9;&#9;l-5.439-2.967l-2.624,2.06c-1.83,1.407-3.742,2.699-5.674,3.962l-0.01,0.007c-3.975,2.384-8.137,4.624-12.567,6.042l-0.345,0.612&#10;&#9;&#9;l-3.818,6.47l-3.627,6.08l-0.008,0.011c-2.386,3.338-4.908,3.888-8.821,3.888H8.159c-0.77,0-1.301-0.228-1.301-1.101v-0.7&#10;&#9;&#9;l0.463-0.155c3.578-1.192,7.573-8.783,9.613-11.92l1.132-1.74c-3.619,0.043-7.076-0.76-10.332-2.39L7.72,54.18l-0.013-0.008&#10;&#9;&#9;c-2.618-1.636-4.916-3.873-6.31-6.652c-1.028-2.05-1.496-4.262-1.379-6.553c0.483-9.487,9.681-15.379,18.482-15.72&#10;&#9;&#9;c2.758-0.107,5.406,0.203,8.064,0.943c2.531,0.704,4.942,1.754,7.296,2.907l0.105-0.186l3.799-8.231&#10;&#9;&#9;c0.328-0.82,0.721-1.635,1.002-2.47c0.162-0.483,0.372-1.221,0.141-1.711c-0.359-0.764-1.795-0.815-2.502-0.816l-8.167,0.61&#10;&#9;&#9;l0.403-1.008c0.245-0.613,0.436-1.156,0.807-1.714l0.188-0.283l0.34-0.018c6.028-0.313,12.03-1.035,18.067-1.202&#10;&#9;&#9;c0.375-0.011,0.775-0.102,1.137,0.033c0.354,0.133,0.548,0.436,0.663,0.782c0.117,0.351,0.122,0.713-0.082,1.033&#10;&#9;&#9;C49.454,14.403,48.826,14.573,48.32,14.773L48.32,14.773z M107.927,0.54c1.9,1.468,0.803,4.502-0.399,6.058&#10;&#9;&#9;c-0.477,0.618-1.112,1.191-1.763,1.62c-1.195,0.786-2.749,1.261-3.998,0.296c-1.901-1.469-0.804-4.503,0.398-6.059&#10;&#9;&#9;c0.477-0.618,1.112-1.191,1.764-1.62C105.125,0.049,106.678-0.426,107.927,0.54L107.927,0.54z M127.813,24.714&#10;&#9;&#9;c-5.896,0.874-9.605,4.414-13.305,8.929c-2.992,3.651-5.875,8.222-7.33,12.729c-0.138,0.427-1.075,3.083-0.706,3.423&#10;&#9;&#9;c0.117,0.108,0.503-0.003,0.626-0.042c0.626-0.202,1.324-0.617,1.882-0.96c2.106-1.296,4.132-3.095,5.875-4.842&#10;&#9;&#9;c1.73-1.735,3.428-3.672,4.826-5.688l0.948-1.367l1.049-1.574l1.052-1.681l3.918-6.883L127.813,24.714L127.813,24.714z&#10;&#9;&#9; M21.819,50.381l0.817-1.356l8.198-14.558c-7.491-2.927-19.269-5.726-24.067,2.886c-0.654,1.479-0.831,3.076-0.533,4.665&#10;&#9;&#9;c0.504,2.688,2.3,5.049,4.626,6.444l0.007,0.005C14.238,50.612,17.944,51.064,21.819,50.381L21.819,50.381z M36.265,36.907&#10;&#9;&#9;L30.83,47.125c0.751-0.386,1.492-0.791,2.225-1.21l3.065-1.903l1.68-1.049l1.578-1.052l2.523-1.813l-2.473-1.392l-2.741-1.581&#10;&#9;&#9;C36.547,37.052,36.406,36.979,36.265,36.907z" data-llp-id="kia-0" data-llp-duration="7000" data-llp-delay="0" fill-opacity="0" style=""/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" fill="#000002"
+                                                    d="M48.32,14.773c-0.903,0.462-1.549,1.917-2.014,2.767l-2.755,5.407&#10;&#9;&#9;l-3.082,6.053l-1.448,2.724l8.413,4.324l4.234-3.25l0.005-0.004c2.887-2.04,5.723-4.154,8.589-6.223&#10;&#9;&#9;c3.06-2.209,6.155-4.375,9.35-6.386c7.118-4.479,15.211-8.497,23.71-9.213c2.291-0.193,4.59-0.142,6.866,0.182&#10;&#9;&#9;c0.496,0.071,0.991,0.142,1.486,0.212c1.108,0.155,1.021,1.429-0.159,1.345l-1.471-0.104c-0.813-0.058-1.596-0.09-2.41-0.013&#10;&#9;&#9;C79.974,14.274,68.728,25.675,55.466,35.99l-3.048,2.625c4.426,2.308,8.774,4.782,13.125,7.226c4.86,2.73,9.73,5.442,14.699,7.971&#10;&#9;&#9;c6.229,3.171,12.693,6.115,19.361,8.237c6.1,1.942,12.585,3.25,19.013,2.98c9.628-0.404,17.946-4.404,23.941-12.004&#10;&#9;&#9;c4.036-5.116,5.566-10.577,6.366-16.935c-3.432,3.765-6.97,7.446-10.822,10.786c-2.571,2.23-5.394,4.421-8.381,6.065&#10;&#9;&#9;c-2.362,1.3-5.279,2.487-8.028,2.262c-1.645-0.135-3.206-0.71-4.12-2.16c-1.65-2.618-0.431-6.905,0.782-9.663&#10;&#9;&#9;c-1.778,1.973-3.666,3.846-5.697,5.559c-2.224,1.877-7.625,6.06-10.541,3.711c-2.311-1.863-1.22-6.102-0.165-8.852l-1.288,0.965&#10;&#9;&#9;l-2.035,1.392l-0.004,0.003c-4.333,2.785-9.152,4.552-14.367,4.03l-0.01-0.001l-0.01-0.002c-1.712-0.285-3.445-0.964-4.368-2.526&#10;&#9;&#9;c-0.971-1.642-0.733-3.737-0.252-5.496c0.508-1.857,1.259-3.674,2.084-5.411c0.902-1.898,1.919-3.747,2.974-5.565&#10;&#9;&#9;c1.779-3.065,3.697-6.045,5.473-9.109l0.006-0.01l0.007-0.01c0.36-0.526,0.709-1.06,1.083-1.576&#10;&#9;&#9;c0.457-0.63,0.942-1.205,1.495-1.753l0.022-0.022l0.025-0.017c1.02-0.681,2.109-1.095,3.245-1.532&#10;&#9;&#9;c0.85-0.326,2.101-0.563,2.548,0.493c0.335,0.791-0.347,1.88-0.814,2.504l-1.904,3.174l-2.103,3.362&#10;&#9;&#9;c-2.364,4.727-4.953,9.374-6.632,14.405c-0.333,1.336-0.936,4.038,0.195,5.159c1.133,1.122,3.86,0.51,5.206,0.174&#10;&#9;&#9;c3.137-1.179,5.887-2.962,8.61-4.883l1.682-1.367l1.651-1.36c1.517-2.419,3.324-4.666,5.323-6.702&#10;&#9;&#9;c4.626-4.713,10.448-8.857,17.015-10.213c1.045-0.216,2.024-0.34,3.081-0.363l0.151-0.302l0.006-0.01&#10;&#9;&#9;c0.373-0.622,0.781-1.162,1.345-1.625c0.687-0.563,1.17-0.726,1.997-0.986c0.99-0.311,1.98-0.622,2.97-0.933l0.019-0.006&#10;&#9;&#9;l0.02-0.003c0.592-0.106,1.09,0.387,0.936,0.967l-0.013,0.049l-1.962,2.987c1.107,0.078,2.601,0.15,3.43,0.687&#10;&#9;&#9;c0.984,0.638,0.816,2.119-0.494,2.109l-0.03,0l-0.03-0.006c-1.229-0.246-2.455-0.42-3.704-0.517h-0.546l-2.762,4.735&#10;&#9;&#9;c-1.54,2.823-3.02,5.677-4.439,8.562c-1.586,3.225-3.131,6.441-4.082,9.922c-0.237,1.194-0.713,4.074,0.497,4.863&#10;&#9;&#9;c1.384,0.902,4.262-0.661,5.461-1.357c1.372-0.797,2.692-1.72,3.961-2.672c1.434-1.075,2.826-2.21,4.188-3.375&#10;&#9;&#9;c2.281-1.95,4.494-3.994,6.643-6.09c0.837-0.816,1.665-1.642,2.48-2.481c0.532-0.548,1.066-1.103,1.567-1.667l1.533-1.821&#10;&#9;&#9;c0.424-0.504,1.127-0.893,1.731-0.427c0.598,0.461,0.521,1.321-0.016,1.802l-0.145,0.174v0.921c0,7.568-1.949,14.924-6.147,21.261&#10;&#9;&#9;c-5.787,8.737-14.65,14.336-25.135,15.303c-12.396,1.143-25.675-3.85-36.677-9.147c-10.272-4.945-19.947-10.979-29.945-16.432&#10;&#9;&#9;l-5.439-2.967l-2.624,2.06c-1.83,1.407-3.742,2.699-5.674,3.962l-0.01,0.007c-3.975,2.384-8.137,4.624-12.567,6.042l-0.345,0.612&#10;&#9;&#9;l-3.818,6.47l-3.627,6.08l-0.008,0.011c-2.386,3.338-4.908,3.888-8.821,3.888H8.159c-0.77,0-1.301-0.228-1.301-1.101v-0.7&#10;&#9;&#9;l0.463-0.155c3.578-1.192,7.573-8.783,9.613-11.92l1.132-1.74c-3.619,0.043-7.076-0.76-10.332-2.39L7.72,54.18l-0.013-0.008&#10;&#9;&#9;c-2.618-1.636-4.916-3.873-6.31-6.652c-1.028-2.05-1.496-4.262-1.379-6.553c0.483-9.487,9.681-15.379,18.482-15.72&#10;&#9;&#9;c2.758-0.107,5.406,0.203,8.064,0.943c2.531,0.704,4.942,1.754,7.296,2.907l0.105-0.186l3.799-8.231&#10;&#9;&#9;c0.328-0.82,0.721-1.635,1.002-2.47c0.162-0.483,0.372-1.221,0.141-1.711c-0.359-0.764-1.795-0.815-2.502-0.816l-8.167,0.61&#10;&#9;&#9;l0.403-1.008c0.245-0.613,0.436-1.156,0.807-1.714l0.188-0.283l0.34-0.018c6.028-0.313,12.03-1.035,18.067-1.202&#10;&#9;&#9;c0.375-0.011,0.775-0.102,1.137,0.033c0.354,0.133,0.548,0.436,0.663,0.782c0.117,0.351,0.122,0.713-0.082,1.033&#10;&#9;&#9;C49.454,14.403,48.826,14.573,48.32,14.773L48.32,14.773z M107.927,0.54c1.9,1.468,0.803,4.502-0.399,6.058&#10;&#9;&#9;c-0.477,0.618-1.112,1.191-1.763,1.62c-1.195,0.786-2.749,1.261-3.998,0.296c-1.901-1.469-0.804-4.503,0.398-6.059&#10;&#9;&#9;c0.477-0.618,1.112-1.191,1.764-1.62C105.125,0.049,106.678-0.426,107.927,0.54L107.927,0.54z M127.813,24.714&#10;&#9;&#9;c-5.896,0.874-9.605,4.414-13.305,8.929c-2.992,3.651-5.875,8.222-7.33,12.729c-0.138,0.427-1.075,3.083-0.706,3.423&#10;&#9;&#9;c0.117,0.108,0.503-0.003,0.626-0.042c0.626-0.202,1.324-0.617,1.882-0.96c2.106-1.296,4.132-3.095,5.875-4.842&#10;&#9;&#9;c1.73-1.735,3.428-3.672,4.826-5.688l0.948-1.367l1.049-1.574l1.052-1.681l3.918-6.883L127.813,24.714L127.813,24.714z&#10;&#9;&#9; M21.819,50.381l0.817-1.356l8.198-14.558c-7.491-2.927-19.269-5.726-24.067,2.886c-0.654,1.479-0.831,3.076-0.533,4.665&#10;&#9;&#9;c0.504,2.688,2.3,5.049,4.626,6.444l0.007,0.005C14.238,50.612,17.944,51.064,21.819,50.381L21.819,50.381z M36.265,36.907&#10;&#9;&#9;L30.83,47.125c0.751-0.386,1.492-0.791,2.225-1.21l3.065-1.903l1.68-1.049l1.578-1.052l2.523-1.813l-2.473-1.392l-2.741-1.581&#10;&#9;&#9;C36.547,37.052,36.406,36.979,36.265,36.907z"
+                                                    data-llp-id="kia-0" data-llp-duration="7000" data-llp-delay="0"
+                                                    fill-opacity="0" style="" />
                                             </g>
                                         </svg>
                                     </div>
-                                    <div class="a-header c-avatar in-view avatar-shine" style="text-align: center;" id="avatar-container">
-                                        <img class="c-avatar__img" src="./assets/avatar.jpg" alt="Kiarash Soleimanzadeh" title="Kiarash Soleimanzadeh">
+                                    <div class="a-header c-avatar in-view" style="text-align: center;"
+                                        id="avatar-container">
+                                        <img class="c-avatar__img" src="./assets/avatar.jpg" alt="Kiarash Soleimanzadeh"
+                                            title="Kiarash Soleimanzadeh">
                                     </div><!-- /c-avatar -->
-                                    <div class="a-header c-avatar in-view" style="padding-top: 1.5rem; text-align: center;"><a href="/kiarash-soleimanzadeh-cv.pdf" class="custom-text-alternative-button" title="Download My CV" download="kiarash-soleimanzadeh-cv.pdf">My CV</a></div>
+                                    <div class="a-header c-avatar in-view"
+                                        style="padding-top: 1.5rem; text-align: center;"><a
+                                            href="/kiarash-soleimanzadeh-cv.pdf" class="custom-text-alternative-button"
+                                            title="Download My CV" download="kiarash-soleimanzadeh-cv.pdf">My CV</a>
+                                    </div>
                                 </div><!-- /c-header-avatar -->
                             </div><!-- /c-header__inner-header -->
                         </header><!-- /o-section__header -->
@@ -121,10 +143,12 @@
                                         <div class="c-brand">
                                             <h1 class="c-brand__title  t-title">
                                                 <span class="c-brand__sizer">
-                                                    <span class="a-header  c-brand__first-word  t-title__first-word in-view">
+                                                    <span
+                                                        class="a-header  c-brand__first-word  t-title__first-word in-view">
                                                         Soleimanzadeh
                                                     </span>
-                                                    <span class="a-header  c-brand__second-word  t-title__second-word in-view">
+                                                    <span
+                                                        class="a-header  c-brand__second-word  t-title__second-word in-view">
                                                         Kiarash
                                                     </span>
                                                 </span>
@@ -138,22 +162,26 @@
                                     </div><!-- /c-header__brand -->
                                     <ul class="c-header__social-buttons  c-social-buttons">
                                         <li class="a-header in-view">
-                                            <a href="https://github.com/KiarashS" target="_blank" class="c-social-button  t-social-button">
+                                            <a href="https://github.com/KiarashS" target="_blank"
+                                                class="c-social-button  t-social-button">
                                                 <i class="fa  fa-lg  fa-github in-view"></i>
                                             </a>
                                         </li>
                                         <li class="a-header in-view">
-                                            <a href="https://ir.linkedin.com/in/kiarash-soleimanzadeh-4a767351" target="_blank" class="c-social-button  t-social-button">
+                                            <a href="https://ir.linkedin.com/in/kiarash-soleimanzadeh-4a767351"
+                                                target="_blank" class="c-social-button  t-social-button">
                                                 <i class="fa  fa-lg  fa-linkedin in-view"></i>
                                             </a>
                                         </li>
                                         <li class="a-header in-view">
-                                            <a href="skype:live:kiarash.s?chat" class="c-social-button  t-social-button">
+                                            <a href="skype:live:kiarash.s?chat"
+                                                class="c-social-button  t-social-button">
                                                 <i class="fa  fa-lg  fa-skype in-view"></i>
                                             </a>
                                         </li>
                                         <li class="a-header in-view">
-                                            <a href="mailto:hello@kiarash.pro?subject=New mail from my personal site" class="c-social-button  t-social-button">
+                                            <a href="mailto:hello@kiarash.pro?subject=New mail from my personal site"
+                                                class="c-social-button  t-social-button">
                                                 <i class="fa  fa-lg  fa-envelope in-view"></i>
                                             </a>
                                         </li>
@@ -203,7 +231,8 @@
                                         <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                             <div class="a-header  o-content in-view">
                                                 <div class="o-content__body">
-                                                    <a href="mailto:hello@kiarash.pro?subject=New mail from my personal site" class="t-link-container">
+                                                    <a href="mailto:hello@kiarash.pro?subject=New mail from my personal site"
+                                                        class="t-link-container">
                                                         <h4>Email</h4>
                                                         <p>
                                                             <span class="t-link-container__item--blended">
@@ -247,19 +276,34 @@
                             <div class="c-intro">
                                 <div class="o-content__body">
                                     <p>
-                                        My name is Kiarash Soleimanzadeh (spelled in Persian as <span style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 0.95em;">کیارش سلیمان زاده</span>). I was born in Hamedan, Iran in March 1990.
+                                        My name is Kiarash Soleimanzadeh (spelled in Persian as <span
+                                            style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 0.95em;">کیارش
+                                            سلیمان زاده</span>). I was born in Hamedan, Iran in March 1990.
                                     </p>
                                     <p>
-                                        I’m a software engineer and developer, experienced mainly on Microsoft technologies. Besides the professional experience, I have several research experiences on major branches of Computer Network (mainly <a rel="nofollow" target="_blank" href="https://en.wikipedia.org/wiki/Software-defined_networking">software-defined networking</a>).
+                                        I’m a software engineer and developer, experienced mainly on Microsoft
+                                        technologies. Besides the professional experience, I have several research
+                                        experiences on major branches of Computer Network (mainly <a rel="nofollow"
+                                            target="_blank"
+                                            href="https://en.wikipedia.org/wiki/Software-defined_networking">software-defined
+                                            networking</a>).
                                     </p>
                                     <p>
-                                        I love open-source software and would love to make my tools and utilities publicly available. I’ve been working on a stable web development methodology and technology, for both large scale and regular size web applications. That one is closed source.
+                                        I love open-source software and would love to make my tools and utilities
+                                        publicly available. I’ve been working on a stable web development methodology
+                                        and technology, for both large scale and regular size web applications. That one
+                                        is closed source.
                                     </p>
                                     <p>
-                                        I have a solid background in .NET/.NET Core technologies. When I’m not busy with that, I dabble in HTML/CSS, Angular, SQL, and Bash scripting. If I’m not developing, I’m somewhere else, thinking about developing. These technologies are my everyday breakfast, so feel free to ask for anything related.
+                                        I have a solid background in .NET/.NET Core technologies. When I’m not busy with
+                                        that, I dabble in HTML/CSS, Angular, SQL, and Bash scripting. If I’m not
+                                        developing, I’m somewhere else, thinking about developing. These technologies
+                                        are my everyday breakfast, so feel free to ask for anything related.
                                     </p>
                                     <p>
-                                        <strong><u>My Research Interests:</u> </strong>Big Data, Machine Learning, Electronic Commerce, Database Systems, Multimedia Systems, Software Engineering, Computer Networks, Distributed Systems.
+                                        <strong><u>My Research Interests:</u> </strong>Big Data, Machine Learning,
+                                        Electronic Commerce, Database Systems, Multimedia Systems, Software Engineering,
+                                        Computer Networks, Distributed Systems.
                                     </p>
                                 </div>
                             </div>
@@ -311,7 +355,10 @@
                                                 Master of Information Technology (Multimedia Systems)
                                             </h4>
                                             <div class="c-work__location">
-                                                Thesis Title: <a href="https://doi.org/10.4218/etrij.2018-0188" target="_blank" style="text-transform:none;">A Dynamic Load Balancing Approach and its Evaluation in Software Defined Networking</a>
+                                                Thesis Title: <a href="https://doi.org/10.4218/etrij.2018-0188"
+                                                    target="_blank" style="text-transform:none;">A Dynamic Load
+                                                    Balancing Approach and its Evaluation in Software Defined
+                                                    Networking</a>
                                             </div>
                                         </div>
                                         <!--div class="o-grid__col-md-7">
@@ -338,7 +385,8 @@
                                                 Bachelor of Software Engineering
                                             </h4>
                                             <div class="c-work__location">
-                                                Thesis Title: Design and Implementation of a University Content Management System for Publishing of Scientific Evidences
+                                                Thesis Title: Design and Implementation of a University Content
+                                                Management System for Publishing of Scientific Evidences
                                             </div>
                                         </div>
                                     </div><!-- /o-grid -->
@@ -390,10 +438,14 @@
                                                 2019
                                             </div>
                                             <h3 class="c-work__heading">
-                                                <a href="https://doi.org/10.4218/etrij.2018-0188" target="_blank" style="text-transform:none;">SD‐WLB: An SDN‐aided mechanism for web load balancing based on server statistics</a>
+                                                <a href="https://doi.org/10.4218/etrij.2018-0188" target="_blank"
+                                                    style="text-transform:none;">SD‐WLB: An SDN‐aided mechanism for web
+                                                    load balancing based on server statistics</a>
                                             </h3>
                                             <h4 class="c-work__title">
-                                                Soleimanzadeh, K., Ahmadi, M., & Nassiri, M. (2019). SD-WLB: An SDN-aided mechanism for web load balancing based on server statistics. ETRI Journal. doi:10.4218/etrij.2018-0188
+                                                Soleimanzadeh, K., Ahmadi, M., & Nassiri, M. (2019). SD-WLB: An
+                                                SDN-aided mechanism for web load balancing based on server statistics.
+                                                ETRI Journal. doi:10.4218/etrij.2018-0188
                                             </h4>
                                             <div class="c-work__location">
                                                 Journal Paper
@@ -436,47 +488,47 @@
 
                     <div class="o-section__content  t-section__content u-pb-0 u-pt-0">
 
-                            <div class="a-experience-timeline  c-timeline  t-border-color o-section__full-top-space">
+                        <div class="a-experience-timeline  c-timeline  t-border-color o-section__full-top-space">
 
-                                <div class="c-timeline__item">
-                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                    <div class="o-content">
-                                        <div class="o-grid">
-                                            <div class="o-grid__col-md-12">
-                                                <div class="c-work__timeframe">
-                                                    2014 - 2019
-                                                </div>
-                                                <h3 class="c-work__heading" style="text-transform:none;">
-                                                    Pouya Pardaz Karkia Company
-                                                </h3>
-                                                <h4 class="c-work__title">
-                                                    CEO
-                                                </h4>
+                            <div class="c-timeline__item">
+                                <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                <div class="o-content">
+                                    <div class="o-grid">
+                                        <div class="o-grid__col-md-12">
+                                            <div class="c-work__timeframe">
+                                                2014 - 2019
                                             </div>
-                                        </div><!-- /o-grid -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /c-timeline__item -->
+                                            <h3 class="c-work__heading" style="text-transform:none;">
+                                                Pouya Pardaz Karkia Company
+                                            </h3>
+                                            <h4 class="c-work__title">
+                                                CEO
+                                            </h4>
+                                        </div>
+                                    </div><!-- /o-grid -->
+                                </div><!-- /o-content -->
+                            </div><!-- /c-timeline__item -->
 
-                                <div class="c-timeline__item">
-                                    <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
-                                    <div class="o-content">
-                                        <div class="o-grid">
-                                            <div class="o-grid__col-md-12">
-                                                <div class="c-work__timeframe">
-                                                    2005 - Now
-                                                </div>
-                                                <h3 class="c-work__heading" style="text-transform:none;">
-                                                    Freelancer
-                                                </h3>
-                                                <h4 class="c-work__title">
-                                                    Full Stack Developer
-                                                </h4>
+                            <div class="c-timeline__item">
+                                <div class="c-timeline__point  t-timeline__point  t-primary-bg"></div>
+                                <div class="o-content">
+                                    <div class="o-grid">
+                                        <div class="o-grid__col-md-12">
+                                            <div class="c-work__timeframe">
+                                                2005 - Now
                                             </div>
-                                        </div><!-- /o-grid -->
-                                    </div><!-- /o-content -->
-                                </div><!-- /c-timeline__item -->
+                                            <h3 class="c-work__heading" style="text-transform:none;">
+                                                Freelancer
+                                            </h3>
+                                            <h4 class="c-work__title">
+                                                Full Stack Developer
+                                            </h4>
+                                        </div>
+                                    </div><!-- /o-grid -->
+                                </div><!-- /o-content -->
+                            </div><!-- /c-timeline__item -->
 
-                            </div><!-- /c-timeline -->
+                        </div><!-- /c-timeline -->
 
                     </div><!-- /o-section__content -->
 
@@ -522,13 +574,17 @@
                                                     2018
                                                 </div>
                                                 <h3 class="c-work__heading">
-                                                    <a href="http://www.ajaums.ac.ir/" target="_blank" style="text-transform:none;">Aja University of Medical Science Portal and Sub-Portals</a>
+                                                    <a href="http://www.ajaums.ac.ir/" target="_blank"
+                                                        style="text-transform:none;">Aja University of Medical Science
+                                                        Portal and Sub-Portals</a>
                                                 </h3>
                                                 <h4 class="c-work__title">
-                                                    Full Stack Developer (ASP.NET Core, Entity Framework Core, SQL Server, HTML5, CSS3, ...)
+                                                    Full Stack Developer (ASP.NET Core, Entity Framework Core, SQL
+                                                    Server, HTML5, CSS3, ...)
                                                 </h4>
                                                 <div class="c-work__location">
-                                                    Signature: <a href="http://www.ajaums.ac.ir/by/" target="_blank">http://www.ajaums.ac.ir/by</a>
+                                                    Signature: <a href="http://www.ajaums.ac.ir/by/"
+                                                        target="_blank">http://www.ajaums.ac.ir/by</a>
                                                 </div>
                                             </div>
                                         </div><!-- /o-grid -->
@@ -544,13 +600,17 @@
                                                     2017
                                                 </div>
                                                 <h3 class="c-work__heading">
-                                                    <a href="http://faculty.ajaums.ac.ir/" target="_blank" style="text-transform:none;">Aja University of Medical Science Professors Comprehensive System</a>
+                                                    <a href="http://faculty.ajaums.ac.ir/" target="_blank"
+                                                        style="text-transform:none;">Aja University of Medical Science
+                                                        Professors Comprehensive System</a>
                                                 </h3>
                                                 <h4 class="c-work__title">
-                                                    Full Stack Developer (ASP.NET MVC 5, Entity Framework 6, SQL Server, HTML5, CSS3, ...)
+                                                    Full Stack Developer (ASP.NET MVC 5, Entity Framework 6, SQL Server,
+                                                    HTML5, CSS3, ...)
                                                 </h4>
                                                 <div class="c-work__location">
-                                                    Signature: <a href="http://faculty.ajaums.ac.ir/by/" target="_blank">http://faculty.ajaums.ac.ir/by</a>
+                                                    Signature: <a href="http://faculty.ajaums.ac.ir/by/"
+                                                        target="_blank">http://faculty.ajaums.ac.ir/by</a>
                                                 </div>
                                             </div>
                                         </div><!-- /o-grid -->
@@ -954,7 +1014,8 @@
                         <div class="o-grid">
                             <div class="o-grid__col-xl-4  o-grid__col-sm-6">
                                 <div class="o-content">
-                                    <a href="https://ir.linkedin.com/in/kiarash-soleimanzadeh-4a767351" target="_blank" class="t-link-container">
+                                    <a href="https://ir.linkedin.com/in/kiarash-soleimanzadeh-4a767351" target="_blank"
+                                        class="t-link-container">
                                         <div class="o-media  o-media--block in-view">
                                             <div class="o-media__figure">
                                                 <div class="c-profile__icon">
@@ -966,7 +1027,8 @@
                                                     LinkedIn
                                                 </h3>
                                                 <p>
-                                                    My profile in LinkedIn, a business- and employment-oriented social networking service.
+                                                    My profile in LinkedIn, a business- and employment-oriented social
+                                                    networking service.
                                                 </p>
                                             </div>
                                         </div><!-- /o-media -->
@@ -987,7 +1049,8 @@
                                                     GitHub
                                                 </h3>
                                                 <p>
-                                                    GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code.
+                                                    GitHub is a web-based hosting service for version control using Git.
+                                                    It is mostly used for computer code.
                                                 </p>
                                             </div>
                                         </div><!-- /o-media -->
@@ -1084,7 +1147,8 @@
                                 <div class="o-grid__col-md-3  o-grid__col-sm-6">
                                     <div class="o-content">
                                         <div class="o-content__body">
-                                            <a href="mailto:hello@kiarash.pro?subject=New mail from my personal site" class="t-link-container">
+                                            <a href="mailto:hello@kiarash.pro?subject=New mail from my personal site"
+                                                class="t-link-container">
                                                 <h4>Email</h4>
                                                 <p>
                                                     <span class="t-link-container__item--blended">
@@ -1105,10 +1169,12 @@
                                         <div class="o-content__body">
                                             <h1 class="c-brand__title  t-title">
                                                 <span class="c-brand__sizer  c-brand__sizer--sm">
-                                                    <span class="a-footer  c-brand__first-word  t-title__first-word in-view">
+                                                    <span
+                                                        class="a-footer  c-brand__first-word  t-title__first-word in-view">
                                                         Soleimanzadeh
                                                     </span>
-                                                    <span class="a-footer  c-brand__second-word  t-title__second-word in-view">
+                                                    <span
+                                                        class="a-footer  c-brand__second-word  t-title__second-word in-view">
                                                         Kiarash
                                                     </span>
                                                 </span>
@@ -1118,12 +1184,14 @@
                                 </div><!-- /c-footer__brand -->
                                 <ul class="c-footer__social-buttons  c-social-buttons  o-content__body">
                                     <li class="a-footer in-view">
-                                        <a href="https://github.com/KiarashS" target="_blank" class="c-social-button  t-social-button">
+                                        <a href="https://github.com/KiarashS" target="_blank"
+                                            class="c-social-button  t-social-button">
                                             <i class="fa  fa-lg  fa-github in-view"></i>
                                         </a>
                                     </li>
                                     <li class="a-footer in-view">
-                                        <a href="https://ir.linkedin.com/in/kiarash-soleimanzadeh-4a767351" target="_blank" class="c-social-button  t-social-button">
+                                        <a href="https://ir.linkedin.com/in/kiarash-soleimanzadeh-4a767351"
+                                            target="_blank" class="c-social-button  t-social-button">
                                             <i class="fa  fa-lg  fa-linkedin in-view"></i>
                                         </a>
                                     </li>
@@ -1133,7 +1201,8 @@
                                         </a>
                                     </li>
                                     <li class="a-footer in-view">
-                                        <a href="mailto:hello@kiarash.pro?subject=New mail from my personal site" class="c-social-button  t-social-button">
+                                        <a href="mailto:hello@kiarash.pro?subject=New mail from my personal site"
+                                            class="c-social-button  t-social-button">
                                             <i class="fa  fa-lg  fa-envelope in-view"></i>
                                         </a>
                                     </li>
@@ -1147,4 +1216,5 @@
 
     </div><!-- /c-main-container -->
 </body>
+
 </html>
