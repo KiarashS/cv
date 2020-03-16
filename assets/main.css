@@ -2463,7 +2463,9 @@ img[height] {
 }
 
 .c-avatar__img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  -webkit-border-radius: 67% 33% 35% 65%/38% 30% 70% 62%;
+  border-radius: 67% 33% 35% 65%/38% 30% 70% 62%;
   width: 11rem;
 }
 
